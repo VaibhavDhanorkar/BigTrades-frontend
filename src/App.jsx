@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 // ─── API CONFIG ───────────────────────────────────────────────────────────────
 const API_BASE = (typeof import.meta !== "undefined" && import.meta.env?.VITE_API_URL)
   ? import.meta.env.VITE_API_URL
-  : "http://localhost:8000";
+  : "https://api.bigtrades.veloxtrader.com";
 const WS_BASE = API_BASE.replace("https://","wss://").replace("http://","ws://");
 
 // ─── IVORY + LIGHT ORANGE THEME ──────────────────────────────────────────────
